@@ -17,7 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from Gamers.views import post_list
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api-auth/', include('rest_framework.urls')),
+    path('gamers_list/', post_list, name="gamers_list"),
 ]
