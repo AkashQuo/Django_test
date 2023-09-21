@@ -16,8 +16,9 @@ Including another URLconf
 """
 from django.urls import path, include
 
-from gamers.views import post_list
+from .views import home
 
 urlpatterns = [
-    path('gamers_list/', post_list, name="gamers_list"),
+    # path('gamers_list/', get_list, name="gamers_list"),
+    path('home/', home, name="home"),
 ]
